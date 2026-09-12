@@ -1,0 +1,4 @@
+kivy
+pyjnius
+arabic-reshaper
+python-bidi

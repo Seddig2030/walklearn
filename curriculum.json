@@ -1,0 +1,1084 @@
+{
+  "levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+  ],
+  "labels": {
+    "A1": "مبتدئ",
+    "A2": "أساسي",
+    "B1": "متوسط",
+    "B2": "فوق المتوسط",
+    "C1": "متقدم / جاهزية جامعية"
+  },
+  "lessons": [
+    {
+      "id": "a1-1",
+      "level": "A1",
+      "titleAr": "التعارف والتحيات",
+      "vocab": [
+        {
+          "en": "Hello",
+          "ar": "مرحبًا",
+          "example": "Hello, my name is Ali.",
+          "exampleAr": "مرحبًا، اسمي علي."
+        },
+        {
+          "en": "Good morning",
+          "ar": "صباح الخير",
+          "example": "Good morning, how are you?",
+          "exampleAr": "صباح الخير، كيف حالك؟"
+        },
+        {
+          "en": "Thank you",
+          "ar": "شكرًا",
+          "example": "Thank you very much.",
+          "exampleAr": "شكرًا جزيلًا."
+        },
+        {
+          "en": "Please",
+          "ar": "من فضلك",
+          "example": "Please sit down.",
+          "exampleAr": "من فضلك اجلس."
+        },
+        {
+          "en": "Name",
+          "ar": "اسم",
+          "example": "What is your name?",
+          "exampleAr": "ما اسمك؟"
+        },
+        {
+          "en": "Friend",
+          "ar": "صديق",
+          "example": "This is my friend.",
+          "exampleAr": "هذا صديقي."
+        }
+      ],
+      "grammarTitleAr": "فعل الكينونة To Be",
+      "grammarNoteAr": "نستخدم am مع I، و is مع he/she/it، و are مع you/we/they.",
+      "grammarExamples": [
+        {
+          "en": "I am a student.",
+          "ar": "أنا طالب."
+        },
+        {
+          "en": "She is happy.",
+          "ar": "هي سعيدة."
+        },
+        {
+          "en": "They are friends.",
+          "ar": "هم أصدقاء."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Thank you",
+          "options": [
+            "مرحبًا",
+            "شكرًا",
+            "اسم",
+            "صديق"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "أكمل: She ___ happy.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Please",
+          "options": [
+            "صباح الخير",
+            "من فضلك",
+            "شكرًا",
+            "اسم"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-2",
+      "level": "A1",
+      "titleAr": "العائلة والأرقام",
+      "vocab": [
+        {
+          "en": "Family",
+          "ar": "عائلة",
+          "example": "I love my family.",
+          "exampleAr": "أحب عائلتي."
+        },
+        {
+          "en": "Mother",
+          "ar": "أم",
+          "example": "My mother is a teacher.",
+          "exampleAr": "أمي معلمة."
+        },
+        {
+          "en": "Father",
+          "ar": "أب",
+          "example": "My father works here.",
+          "exampleAr": "أبي يعمل هنا."
+        },
+        {
+          "en": "Brother",
+          "ar": "أخ",
+          "example": "I have one brother.",
+          "exampleAr": "عندي أخ واحد."
+        },
+        {
+          "en": "Sister",
+          "ar": "أخت",
+          "example": "My sister is young.",
+          "exampleAr": "أختي صغيرة."
+        },
+        {
+          "en": "House",
+          "ar": "بيت",
+          "example": "Our house is big.",
+          "exampleAr": "بيتنا كبير."
+        }
+      ],
+      "grammarTitleAr": "صيغة الملكية (My / Your / His)",
+      "grammarNoteAr": "نستخدم my لـ(لي)، your لـ(لك)، his لـ(له)، her لـ(لها)، our لـ(لنا).",
+      "grammarExamples": [
+        {
+          "en": "This is my house.",
+          "ar": "هذا بيتي."
+        },
+        {
+          "en": "Her brother is tall.",
+          "ar": "أخوها طويل."
+        },
+        {
+          "en": "Our family is big.",
+          "ar": "عائلتنا كبيرة."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Mother",
+          "options": [
+            "أب",
+            "أخ",
+            "أم",
+            "أخت"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "promptAr": "أكمل: This is ___ house. (بيتي)",
+          "options": [
+            "my",
+            "her",
+            "his",
+            "our"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Family",
+          "options": [
+            "بيت",
+            "عائلة",
+            "أخت",
+            "أب"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "a1-3",
+      "level": "A1",
+      "titleAr": "الأيام والوقت",
+      "vocab": [
+        {
+          "en": "Today",
+          "ar": "اليوم",
+          "example": "Today is Monday.",
+          "exampleAr": "اليوم الاثنين."
+        },
+        {
+          "en": "Tomorrow",
+          "ar": "غدًا",
+          "example": "See you tomorrow.",
+          "exampleAr": "أشوفك بكرة."
+        },
+        {
+          "en": "Morning",
+          "ar": "صباح",
+          "example": "I study in the morning.",
+          "exampleAr": "أدرس بالصباح."
+        },
+        {
+          "en": "Night",
+          "ar": "ليل",
+          "example": "I sleep at night.",
+          "exampleAr": "أنام بالليل."
+        },
+        {
+          "en": "Week",
+          "ar": "أسبوع",
+          "example": "Next week I have an exam.",
+          "exampleAr": "الأسبوع الجاي عندي امتحان."
+        },
+        {
+          "en": "Time",
+          "ar": "وقت",
+          "example": "What time is it?",
+          "exampleAr": "كم الساعة؟"
+        }
+      ],
+      "grammarTitleAr": "المضارع البسيط للعادات (Simple Present)",
+      "grammarNoteAr": "نستخدمه للعادات والحقائق الثابتة، ونضيف s للفعل مع he/she/it.",
+      "grammarExamples": [
+        {
+          "en": "I study every morning.",
+          "ar": "أدرس كل صباح."
+        },
+        {
+          "en": "She studies at night.",
+          "ar": "هي تدرس بالليل."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Week",
+          "options": [
+            "يوم",
+            "أسبوع",
+            "صباح",
+            "وقت"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "أكمل: She ___ every night. (تدرس)",
+          "options": [
+            "study",
+            "studies",
+            "studying",
+            "studied"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Tomorrow",
+          "options": [
+            "اليوم",
+            "غدًا",
+            "ليل",
+            "أسبوع"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "a2-1",
+      "level": "A2",
+      "titleAr": "الطلب في المطعم",
+      "vocab": [
+        {
+          "en": "Menu",
+          "ar": "قائمة الطعام",
+          "example": "Can I see the menu?",
+          "exampleAr": "ممكن أشوف قائمة الطعام؟"
+        },
+        {
+          "en": "Order",
+          "ar": "طلب",
+          "example": "I would like to order.",
+          "exampleAr": "أحب أطلب."
+        },
+        {
+          "en": "Bill",
+          "ar": "الفاتورة",
+          "example": "Can I have the bill, please?",
+          "exampleAr": "ممكن الفاتورة من فضلك؟"
+        },
+        {
+          "en": "Delicious",
+          "ar": "لذيذ",
+          "example": "This food is delicious.",
+          "exampleAr": "هذا الأكل لذيذ."
+        },
+        {
+          "en": "Waiter",
+          "ar": "نادل",
+          "example": "The waiter is friendly.",
+          "exampleAr": "النادل ودود."
+        },
+        {
+          "en": "Water",
+          "ar": "ماء",
+          "example": "Can I get some water?",
+          "exampleAr": "ممكن شوية ماء؟"
+        }
+      ],
+      "grammarTitleAr": "أسلوب الطلب المهذب (Would like)",
+      "grammarNoteAr": "نستخدم I would like بدل I want لأنها أكثر تهذيبًا.",
+      "grammarExamples": [
+        {
+          "en": "I would like a coffee, please.",
+          "ar": "أحب قهوة من فضلك."
+        },
+        {
+          "en": "Would you like some water?",
+          "ar": "تحب شوية ماء؟"
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Bill",
+          "options": [
+            "قائمة الطعام",
+            "نادل",
+            "الفاتورة",
+            "طلب"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "promptAr": "الأسلوب الأكثر تهذيبًا للطلب هو:",
+          "options": [
+            "I want",
+            "I would like",
+            "Give me",
+            "I need"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Delicious",
+          "options": [
+            "لذيذ",
+            "ماء",
+            "طلب",
+            "نادل"
+          ],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "a2-2",
+      "level": "A2",
+      "titleAr": "الاتجاهات والمواصلات",
+      "vocab": [
+        {
+          "en": "Left",
+          "ar": "يسار",
+          "example": "Turn left here.",
+          "exampleAr": "لف يسار هنا."
+        },
+        {
+          "en": "Right",
+          "ar": "يمين",
+          "example": "Turn right at the light.",
+          "exampleAr": "لف يمين عند الإشارة."
+        },
+        {
+          "en": "Straight",
+          "ar": "دغري / مستقيم",
+          "example": "Go straight ahead.",
+          "exampleAr": "روح مستقيم للأمام."
+        },
+        {
+          "en": "Bus stop",
+          "ar": "موقف الباص",
+          "example": "Where is the bus stop?",
+          "exampleAr": "وين موقف الباص؟"
+        },
+        {
+          "en": "Ticket",
+          "ar": "تذكرة",
+          "example": "I need a ticket.",
+          "exampleAr": "أحتاج تذكرة."
+        },
+        {
+          "en": "Near",
+          "ar": "قريب",
+          "example": "It's near the station.",
+          "exampleAr": "هو قريب من المحطة."
+        }
+      ],
+      "grammarTitleAr": "الأوامر والإرشادات (Imperatives)",
+      "grammarNoteAr": "لإعطاء توجيهات نستخدم الفعل مباشرة بدون فاعل، مثل Turn وGo وStop.",
+      "grammarExamples": [
+        {
+          "en": "Turn left at the corner.",
+          "ar": "لف يسار عند الزاوية."
+        },
+        {
+          "en": "Stop here.",
+          "ar": "قف هنا."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Ticket",
+          "options": [
+            "تذكرة",
+            "موقف",
+            "يمين",
+            "قريب"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "promptAr": "أي كلمة تعني (يسار)؟",
+          "options": [
+            "Right",
+            "Straight",
+            "Left",
+            "Near"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Near",
+          "options": [
+            "بعيد",
+            "قريب",
+            "يمين",
+            "تذكرة"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "a2-3",
+      "level": "A2",
+      "titleAr": "وصف يومك الدراسي",
+      "vocab": [
+        {
+          "en": "Schedule",
+          "ar": "جدول",
+          "example": "This is my class schedule.",
+          "exampleAr": "هذا جدول حصصي."
+        },
+        {
+          "en": "Homework",
+          "ar": "واجب",
+          "example": "I finished my homework.",
+          "exampleAr": "خلصت واجبي."
+        },
+        {
+          "en": "Subject",
+          "ar": "مادة دراسية",
+          "example": "Math is my favorite subject.",
+          "exampleAr": "الرياضيات مادتي المفضلة."
+        },
+        {
+          "en": "Exam",
+          "ar": "امتحان",
+          "example": "I have an exam tomorrow.",
+          "exampleAr": "عندي امتحان بكرة."
+        },
+        {
+          "en": "Grade",
+          "ar": "علامة / صف",
+          "example": "I got a good grade.",
+          "exampleAr": "أخذت علامة حلوة."
+        },
+        {
+          "en": "Library",
+          "ar": "مكتبة",
+          "example": "I study at the library.",
+          "exampleAr": "أدرس بالمكتبة."
+        }
+      ],
+      "grammarTitleAr": "المضارع المستمر (Present Continuous)",
+      "grammarNoteAr": "نستخدم am/is/are + الفعل+ing للحديث عن شيء يصير الآن أو مخطط له قريبًا.",
+      "grammarExamples": [
+        {
+          "en": "I am studying for my exam.",
+          "ar": "أنا أدرس لامتحاني."
+        },
+        {
+          "en": "She is writing her homework.",
+          "ar": "هي تكتب واجبها."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Exam",
+          "options": [
+            "واجب",
+            "امتحان",
+            "جدول",
+            "مكتبة"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "أكمل: I ___ studying now.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "be"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Library",
+          "options": [
+            "مكتبة",
+            "علامة",
+            "مادة",
+            "جدول"
+          ],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "b1-1",
+      "level": "B1",
+      "titleAr": "التعبير عن الرأي",
+      "vocab": [
+        {
+          "en": "I believe",
+          "ar": "أعتقد",
+          "example": "I believe this is correct.",
+          "exampleAr": "أعتقد أن هذا صحيح."
+        },
+        {
+          "en": "In my opinion",
+          "ar": "برأيي",
+          "example": "In my opinion, it's a good idea.",
+          "exampleAr": "برأيي هذه فكرة جيدة."
+        },
+        {
+          "en": "I agree",
+          "ar": "أوافق",
+          "example": "I agree with you.",
+          "exampleAr": "أوافقك الرأي."
+        },
+        {
+          "en": "I disagree",
+          "ar": "لا أوافق",
+          "example": "I disagree with that.",
+          "exampleAr": "لا أوافق على هذا."
+        },
+        {
+          "en": "However",
+          "ar": "لكن / مع ذلك",
+          "example": "However, I have a question.",
+          "exampleAr": "لكن عندي سؤال."
+        },
+        {
+          "en": "Definitely",
+          "ar": "بالتأكيد",
+          "example": "That is definitely true.",
+          "exampleAr": "هذا صحيح بالتأكيد."
+        }
+      ],
+      "grammarTitleAr": "الزمن المضارع التام (Present Perfect)",
+      "grammarNoteAr": "نستخدم have/has + التصريف الثالث للفعل عند الحديث عن تجربة أو حدث ما زال أثره مستمر.",
+      "grammarExamples": [
+        {
+          "en": "I have visited London before.",
+          "ar": "زرت لندن من قبل."
+        },
+        {
+          "en": "She has finished her homework.",
+          "ar": "أنهت واجبها."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لعبارة In my opinion",
+          "options": [
+            "أوافق",
+            "برأيي",
+            "لكن",
+            "بالتأكيد"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "أكمل: She ___ finished her homework.",
+          "options": [
+            "have",
+            "has",
+            "is",
+            "was"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة However",
+          "options": [
+            "بالتأكيد",
+            "أوافق",
+            "لكن",
+            "أعتقد"
+          ],
+          "answerIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "b1-2",
+      "level": "B1",
+      "titleAr": "التخطيط للدراسة في الخارج",
+      "vocab": [
+        {
+          "en": "Application",
+          "ar": "طلب التقديم",
+          "example": "I submitted my university application.",
+          "exampleAr": "قدمت طلب التسجيل بالجامعة."
+        },
+        {
+          "en": "Requirement",
+          "ar": "متطلب",
+          "example": "English is a requirement for this major.",
+          "exampleAr": "الإنجليزي متطلب لهذا التخصص."
+        },
+        {
+          "en": "Scholarship",
+          "ar": "منحة دراسية",
+          "example": "She got a full scholarship.",
+          "exampleAr": "أخذت منحة كاملة."
+        },
+        {
+          "en": "Deadline",
+          "ar": "الموعد النهائي",
+          "example": "The deadline is next Friday.",
+          "exampleAr": "الموعد النهائي الجمعة الجاية."
+        },
+        {
+          "en": "Major",
+          "ar": "تخصص",
+          "example": "What is your major?",
+          "exampleAr": "ايش تخصصك؟"
+        },
+        {
+          "en": "Campus",
+          "ar": "الحرم الجامعي",
+          "example": "The campus is very big.",
+          "exampleAr": "الحرم الجامعي كبير جدًا."
+        }
+      ],
+      "grammarTitleAr": "المستقبل بـ (Going to)",
+      "grammarNoteAr": "نستخدم am/is/are + going to + الفعل للحديث عن خطط مستقبلية قررناها مسبقًا.",
+      "grammarExamples": [
+        {
+          "en": "I am going to study abroad.",
+          "ar": "أنا رايح أدرس بالخارج."
+        },
+        {
+          "en": "She is going to apply next month.",
+          "ar": "هي رايحة تقدم الشهر الجاي."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Scholarship",
+          "options": [
+            "منحة دراسية",
+            "متطلب",
+            "تخصص",
+            "الموعد النهائي"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "promptAr": "أكمل: I ___ going to apply. (أنا)",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "be"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Deadline",
+          "options": [
+            "طلب التقديم",
+            "الموعد النهائي",
+            "الحرم الجامعي",
+            "تخصص"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "b2-1",
+      "level": "B2",
+      "titleAr": "مفردات أكاديمية أساسية",
+      "academic": true,
+      "vocab": [
+        {
+          "en": "Analyze",
+          "ar": "يحلّل",
+          "example": "We need to analyze this data.",
+          "exampleAr": "لازم نحلل هذه البيانات."
+        },
+        {
+          "en": "Significant",
+          "ar": "مهم / ذو دلالة",
+          "example": "This is a significant result.",
+          "exampleAr": "هذه نتيجة مهمة."
+        },
+        {
+          "en": "Argument",
+          "ar": "حجة / طرح",
+          "example": "Her argument was convincing.",
+          "exampleAr": "طرحها كان مقنعًا."
+        },
+        {
+          "en": "Evidence",
+          "ar": "دليل / بيّنة",
+          "example": "There is no evidence for this claim.",
+          "exampleAr": "ما فيه دليل على هذا الادعاء."
+        },
+        {
+          "en": "Research",
+          "ar": "بحث علمي",
+          "example": "This research took two years.",
+          "exampleAr": "هذا البحث أخذ سنتين."
+        },
+        {
+          "en": "Perspective",
+          "ar": "وجهة نظر",
+          "example": "Consider a different perspective.",
+          "exampleAr": "فكر بوجهة نظر مختلفة."
+        }
+      ],
+      "grammarTitleAr": "المبني للمجهول (Passive Voice)",
+      "grammarNoteAr": "نستخدمه بالأبحاث الأكاديمية عشان نركز على الفعل نفسه مو على الفاعل. الصيغة: is/are/was/were + التصريف الثالث.",
+      "grammarExamples": [
+        {
+          "en": "The data was analyzed carefully.",
+          "ar": "تم تحليل البيانات بعناية."
+        },
+        {
+          "en": "This theory is widely accepted.",
+          "ar": "هذه النظرية مقبولة على نطاق واسع."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Evidence",
+          "options": [
+            "حجة",
+            "دليل",
+            "بحث",
+            "وجهة نظر"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "أكمل بالمبني للمجهول: The report ___ written last week.",
+          "options": [
+            "is",
+            "was",
+            "has",
+            "did"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Significant",
+          "options": [
+            "بسيط",
+            "مهم",
+            "قديم",
+            "سريع"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "b2-2",
+      "level": "B2",
+      "titleAr": "قراءة أكاديمية: لماذا يدرس الطلاب بالخارج",
+      "academic": true,
+      "vocab": [
+        {
+          "en": "Opportunity",
+          "ar": "فرصة",
+          "example": "Studying abroad is a great opportunity.",
+          "exampleAr": "الدراسة بالخارج فرصة رائعة."
+        },
+        {
+          "en": "Challenge",
+          "ar": "تحدٍّ",
+          "example": "Adapting to a new culture is a challenge.",
+          "exampleAr": "التأقلم مع ثقافة جديدة تحدٍّ."
+        },
+        {
+          "en": "Independent",
+          "ar": "مستقل",
+          "example": "Students become more independent.",
+          "exampleAr": "الطلاب يصيرون أكثر استقلالية."
+        },
+        {
+          "en": "Adapt",
+          "ar": "يتأقلم",
+          "example": "It takes time to adapt.",
+          "exampleAr": "يحتاج وقت عشان تتأقلم."
+        },
+        {
+          "en": "Career",
+          "ar": "مسيرة مهنية",
+          "example": "This helps their future career.",
+          "exampleAr": "هذا يساعد مسيرتهم المهنية."
+        },
+        {
+          "en": "Global",
+          "ar": "عالمي",
+          "example": "It gives them a global outlook.",
+          "exampleAr": "يعطيهم نظرة عالمية."
+        }
+      ],
+      "grammarTitleAr": "روابط الربط الأكاديمية (Linking Words)",
+      "grammarNoteAr": "نستخدم كلمات مثل Furthermore وMoreover وTherefore وOn the other hand لربط الأفكار بمقال أكاديمي منظم.",
+      "grammarExamples": [
+        {
+          "en": "Furthermore, it improves language skills.",
+          "ar": "علاوة على ذلك، يحسّن المهارات اللغوية."
+        },
+        {
+          "en": "Therefore, many students choose this path.",
+          "ar": "لذلك، كثير من الطلاب يختارون هذا الطريق."
+        }
+      ],
+      "reading": {
+        "titleAr": "فقرة أكاديمية — استمع واقرأ",
+        "en": "Every year, thousands of students choose to study abroad. This experience offers many opportunities, such as learning a new language and meeting people from different cultures. However, it also comes with challenges. Students must adapt to a new environment, manage their time independently, and sometimes deal with homesickness. Despite these challenges, most students agree that studying abroad has a positive impact on their personal growth and future career.",
+        "ar": "كل سنة، آلاف الطلاب يختارون يدرسون بالخارج. هذه التجربة تقدم فرص كثيرة، متل تعلم لغة جديدة والتعرف على ناس من ثقافات مختلفة. بس فيها تحديات كمان. الطلاب لازم يتأقلموا مع بيئة جديدة، ويديروا وقتهم بشكل مستقل، وأحيانًا يتعاملوا مع الحنين للوطن. رغم هذه التحديات، أغلب الطلاب متفقين إن الدراسة بالخارج إلها أثر إيجابي على نموهم الشخصي ومسيرتهم المهنية."
+      },
+      "quiz": [
+        {
+          "promptAr": "حسب الفقرة، وش من التحديات اللي يواجهها الطلاب؟",
+          "options": [
+            "تعلم لغة جديدة",
+            "الحنين للوطن",
+            "لقاء أصدقاء",
+            "فرص عمل"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Challenge",
+          "options": [
+            "فرصة",
+            "تحدٍّ",
+            "مسيرة",
+            "عالمي"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "حسب الفقرة، أغلب الطلاب يتفقون إن التجربة:",
+          "options": [
+            "سلبية تمامًا",
+            "لها أثر إيجابي",
+            "مضيعة وقت",
+            "غير مفيدة"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "c1-1",
+      "level": "C1",
+      "titleAr": "لغة النقاش والمحاضرات الجامعية",
+      "academic": true,
+      "vocab": [
+        {
+          "en": "To elaborate",
+          "ar": "يفصّل / يوسع الشرح",
+          "example": "Could you elaborate on that point?",
+          "exampleAr": "ممكن توسع بشرح هالنقطة؟"
+        },
+        {
+          "en": "To clarify",
+          "ar": "يوضّح",
+          "example": "Let me clarify my point.",
+          "exampleAr": "خليني أوضح وجهة نظري."
+        },
+        {
+          "en": "Consequently",
+          "ar": "بالتالي / نتيجة لذلك",
+          "example": "Consequently, prices increased.",
+          "exampleAr": "بالتالي، ارتفعت الأسعار."
+        },
+        {
+          "en": "Nevertheless",
+          "ar": "ومع ذلك",
+          "example": "Nevertheless, the plan succeeded.",
+          "exampleAr": "ومع ذلك، نجحت الخطة."
+        },
+        {
+          "en": "To assume",
+          "ar": "يفترض",
+          "example": "We cannot assume this is true.",
+          "exampleAr": "ما نقدر نفترض إن هذا صحيح."
+        },
+        {
+          "en": "Outcome",
+          "ar": "نتيجة",
+          "example": "The outcome was unexpected.",
+          "exampleAr": "كانت النتيجة غير متوقعة."
+        }
+      ],
+      "grammarTitleAr": "الجمل الشرطية المتقدمة (Conditionals)",
+      "grammarNoteAr": "الشرط الثالث (لو + كان + الماضي التام) يستخدم للحديث عن مواقف ماضية افتراضية غير واقعية: If + had + التصريف الثالث, would have + التصريف الثالث.",
+      "grammarExamples": [
+        {
+          "en": "If I had studied harder, I would have passed.",
+          "ar": "لو كنت درست أكثر، كنت نجحت."
+        },
+        {
+          "en": "If she had applied earlier, she would have gotten the scholarship.",
+          "ar": "لو كانت قدمت أبكر، كانت أخذت المنحة."
+        }
+      ],
+      "quiz": [
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Nevertheless",
+          "options": [
+            "بالتالي",
+            "ومع ذلك",
+            "يفترض",
+            "نتيجة"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "أكمل: If I ___ studied harder, I would have passed.",
+          "options": [
+            "have",
+            "had",
+            "has",
+            "did"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة To clarify",
+          "options": [
+            "يفصّل",
+            "يوضّح",
+            "يفترض",
+            "بالتالي"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "c1-2",
+      "level": "C1",
+      "titleAr": "قراءة أكاديمية: التعليم والتكنولوجيا",
+      "academic": true,
+      "vocab": [
+        {
+          "en": "Accessible",
+          "ar": "متاح / يسهل الوصول إليه",
+          "example": "Online courses made education more accessible.",
+          "exampleAr": "الدورات الإلكترونية خلت التعليم أسهل وصولًا."
+        },
+        {
+          "en": "To enhance",
+          "ar": "يعزز / يحسّن",
+          "example": "Technology can enhance learning.",
+          "exampleAr": "التكنولوجيا ممكن تعزز التعلم."
+        },
+        {
+          "en": "Drawback",
+          "ar": "عيب / سلبية",
+          "example": "One drawback is the lack of interaction.",
+          "exampleAr": "من العيوب قلة التفاعل."
+        },
+        {
+          "en": "Institution",
+          "ar": "مؤسسة",
+          "example": "Many institutions now offer online degrees.",
+          "exampleAr": "كثير من المؤسسات صارت تقدم شهادات أونلاين."
+        },
+        {
+          "en": "To rely on",
+          "ar": "يعتمد على",
+          "example": "Students rely on digital resources.",
+          "exampleAr": "الطلاب يعتمدون على المصادر الرقمية."
+        },
+        {
+          "en": "Ultimately",
+          "ar": "في النهاية",
+          "example": "Ultimately, it depends on the learner.",
+          "exampleAr": "في النهاية، يعتمد على المتعلم نفسه."
+        }
+      ],
+      "grammarTitleAr": "التمييز بين الأسماء المجردة بالكتابة الأكاديمية",
+      "grammarNoteAr": "بالكتابة الأكاديمية نفضّل الأسماء المجردة بدل الأفعال المباشرة، مثل استخدام the development بدل to develop، عشان يصير الأسلوب أكثر رسمية.",
+      "grammarExamples": [
+        {
+          "en": "The development of online learning has changed education.",
+          "ar": "تطور التعلم الإلكتروني غيّر التعليم."
+        },
+        {
+          "en": "The implementation of this policy was successful.",
+          "ar": "تطبيق هذه السياسة كان ناجحًا."
+        }
+      ],
+      "reading": {
+        "titleAr": "فقرة أكاديمية — استمع واقرأ",
+        "en": "Technology has significantly transformed higher education over the past decade. Online platforms have made learning more accessible, allowing students from different backgrounds to enrol in courses offered by leading institutions worldwide. Furthermore, interactive tools can enhance engagement and help students learn at their own pace. Nevertheless, some drawbacks remain, including reduced face-to-face interaction and the need for strong self-discipline. Ultimately, the effectiveness of technology in education depends on how it is implemented and used.",
+        "ar": "التكنولوجيا غيّرت التعليم العالي بشكل كبير بالعشر سنوات الأخيرة. المنصات الإلكترونية خلت التعلم أسهل وصولًا، وخلت طلاب من خلفيات مختلفة يسجلوا بدورات تقدمها مؤسسات رائدة حول العالم. علاوة على ذلك، الأدوات التفاعلية ممكن تعزز التفاعل وتساعد الطلاب يتعلموا بالسرعة اللي تناسبهم. ومع ذلك، فيه سلبيات باقية، منها قلة التفاعل المباشر والحاجة لانضباط ذاتي قوي. في النهاية، فعالية التكنولوجيا بالتعليم تعتمد على كيف يتم تطبيقها واستخدامها."
+      },
+      "quiz": [
+        {
+          "promptAr": "حسب الفقرة، وش من فوائد التعلم الإلكتروني؟",
+          "options": [
+            "تفاعل مباشر أكثر",
+            "سهولة الوصول للتعليم",
+            "انضباط أقل مطلوب",
+            "لا فوائد"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "اختر الترجمة الصحيحة لكلمة Drawback",
+          "options": [
+            "ميزة",
+            "عيب / سلبية",
+            "مؤسسة",
+            "تعزيز"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "promptAr": "حسب الفقرة، فعالية التكنولوجيا بالتعليم تعتمد على:",
+          "options": [
+            "نوع الجهاز",
+            "كيف يتم استخدامها",
+            "عدد الطلاب",
+            "سرعة الإنترنت"
+          ],
+          "answerIndex": 1
+        }
+      ]
+    }
+  ]
+}
