@@ -15,39 +15,96 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            git zip unzip openjdk-17-jdk \
+            git zip unzip \
+            openjdk-17-jdk \
             python3-pip python3-venv \
             autoconf automake libtool pkg-config \
             zlib1g-dev libncurses5-dev libncursesw5-dev \
             cmake libffi-dev libssl-dev
 
-      - name: Install Buildozer
+      - name: Create Python environment
         run: |
-          python3 -m venv $HOME/buildozer-venv
-          source $HOME/buildozer-venv/bin/activate
-          pip install --upgrade pip setuptools wheel
-          pip install buildozer cython==0.29.37
+          python3 -m venv "$HOME/buildozer-venv"
+          source "$HOME/buildozer-venv/bin/activate"
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install buildozer cython==0.29.37
 
-      - name: Prepare Android SDK licenses
+      - name: Prepare Android SDK
         run: |
+          source "$HOME/buildozer-venv/bin/activate"
+
           mkdir -p "$HOME/.android"
           touch "$HOME/.android/repositories.cfg"
 
-      - name: Build APK
-        env:
-          ACCEPT_ANDROID_SDK_LICENSE: "1"
+          echo "Preparing Buildozer Android platform..."
+
+          buildozer android debug || true
+
+      - name: Accept Android SDK licenses
         run: |
-          source $HOME/buildozer-venv/bin/activate
+          SDK="$HOME/.buildozer/android/platform/android-sdk"
 
-          yes | buildozer -v android debug || {
-            echo "First Buildozer attempt failed. Trying again after accepting SDK licenses..."
-            yes | buildozer -v android debug
-          }
+          echo "Android SDK location:"
+          echo "$SDK"
 
-      - name: List generated APK
+          if [ ! -d "$SDK" ]; then
+            echo "ERROR: Android SDK was not created."
+            exit 1
+          fi
+
+          SDKMANAGER=$(find "$SDK/cmdline-tools" -type f -name sdkmanager 2>/dev/null | head -n 1)
+
+          if [ -z "$SDKMANAGER" ]; then
+            SDKMANAGER=$(find "$SDK/tools/bin" -type f -name sdkmanager 2>/dev/null | head -n 1)
+          fi
+
+          if [ -z "$SDKMANAGER" ]; then
+            echo "ERROR: sdkmanager was not found."
+            find "$SDK" -maxdepth 4 -type f -name sdkmanager -print
+            exit 1
+          fi
+
+          echo "Using sdkmanager:"
+          echo "$SDKMANAGER"
+
+          yes | "$SDKMANAGER" --licenses || true
+
+          "$SDKMANAGER" \
+            "platform-tools" \
+            "platforms;android-35" \
+            "build-tools;37.0.0"
+
+          yes | "$SDKMANAGER" --licenses || true
+
+      - name: Verify Android Build Tools
+        run: |
+          SDK="$HOME/.buildozer/android/platform/android-sdk"
+
+          echo "Checking Build-Tools..."
+          ls -la "$SDK/build-tools" || true
+
+          echo "Checking AIDL..."
+          find "$SDK/build-tools" -type f -name aidl -print
+
+          if [ ! -f "$SDK/build-tools/37.0.0/aidl" ]; then
+            echo "ERROR: AIDL was not installed."
+            exit 1
+          fi
+
+          echo "AIDL is ready."
+
+      - name: Build WalkLearn APK
+        run: |
+          source "$HOME/buildozer-venv/bin/activate"
+
+          yes | buildozer -v android debug
+
+      - name: Show generated APK
         if: success()
         run: |
-          echo "Generated APK files:"
+          echo "================================="
+          echo "APK BUILD SUCCESSFUL"
+          echo "================================="
           ls -lh bin/
 
       - name: Upload APK
