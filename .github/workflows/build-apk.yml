@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout
+      - name: Checkout project
         uses: actions/checkout@v4
 
       - name: Install system dependencies
@@ -16,21 +16,44 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             git zip unzip openjdk-17-jdk \
-            python3-pip autoconf libtool pkg-config \
+            python3-pip python3-venv \
+            autoconf automake libtool pkg-config \
             zlib1g-dev libncurses5-dev libncursesw5-dev \
             cmake libffi-dev libssl-dev
 
-      - name: Install Python build tools
+      - name: Install Buildozer
         run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install buildozer cython==0.29.37
+          python3 -m venv $HOME/buildozer-venv
+          source $HOME/buildozer-venv/bin/activate
+          pip install --upgrade pip setuptools wheel
+          pip install buildozer cython==0.29.37
+
+      - name: Prepare Android SDK licenses
+        run: |
+          mkdir -p "$HOME/.android"
+          touch "$HOME/.android/repositories.cfg"
 
       - name: Build APK
+        env:
+          ACCEPT_ANDROID_SDK_LICENSE: "1"
         run: |
-          buildozer -v android debug
+          source $HOME/buildozer-venv/bin/activate
+
+          yes | buildozer -v android debug || {
+            echo "First Buildozer attempt failed. Trying again after accepting SDK licenses..."
+            yes | buildozer -v android debug
+          }
+
+      - name: List generated APK
+        if: success()
+        run: |
+          echo "Generated APK files:"
+          ls -lh bin/
 
       - name: Upload APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: WalkLearn-APK
           path: bin/*.apk
+          if-no-files-found: error
